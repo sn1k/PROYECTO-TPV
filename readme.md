@@ -32,22 +32,23 @@ Cada linea del ticket tendrá un id propio. de esta forma si queremos devolver u
 
 ###Controladores
 
-[Articulo](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/controllers/Articulos.php)
+- [x][Articulo](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/controllers/Articulos.php)
 
-[Precios](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/controllers/Precios.php)
+- [x][Precios](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/controllers/Precios.php)
 
+- []Devolucion
 
 ###Vistas
 **Articulos**
 
-[Crear articulo](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/articulos/create.php)
+- [x][Crear articulo](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/articulos/create.php)
 
-[index Articulos](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/articulos/index.php)
+- [x][index Articulos](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/articulos/index.php)
 
-[Success added](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/articulos/success.php)
+- [x][Success added](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/articulos/success.php)
 
 **Precio**
 
-[Add precio](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/precios/index.php)
+- [x][Add precio](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/precios/index.php)
 
-[Success added](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/precios/success.php)
+- [x] [Success added](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/precios/success.php)
