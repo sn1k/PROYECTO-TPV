@@ -32,9 +32,9 @@ Cada linea del ticket tendrá un id propio. de esta forma si queremos devolver u
 
 ###Controladores
 
-- [x][Articulo](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/controllers/Articulos.php)
+- [x] [Articulo](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/controllers/Articulos.php)
 
-- [x][Precios](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/controllers/Precios.php)
+- [x] [Precios](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/controllers/Precios.php)
 
 - [] Devolucion
 
