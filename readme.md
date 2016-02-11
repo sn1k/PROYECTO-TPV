@@ -3,7 +3,7 @@
 
 
 ###Diagrama UML
-![UML](https://i.gyazo.com/39b61a5ffbe415cb7ef42bd158cbff7e.png)
+![UML](https://i.gyazo.com/a6f053a49d54ba2e5d61f62dc5ce31a0.png)
 
 **Descripción***
 Los articulos se añadiran uno a uno a la base de datos. Al introducirlos se le indiracara un precio aunque luego se podrá modificar dicho precio.
