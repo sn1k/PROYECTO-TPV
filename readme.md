@@ -36,7 +36,9 @@ Cada linea del ticket tendrá un id propio. de esta forma si queremos devolver u
 
 - [x] [Precios](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/controllers/Precios.php)
 
-- [] Devolucion
+- [ ] Devolución
+
+- [ ] Descuentos
 
 ###Vistas
 **Articulos**
