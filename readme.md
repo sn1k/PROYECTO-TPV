@@ -20,10 +20,12 @@ Linea carrito se compondrá de un Articulo y de su posible descuento, esta linea
 Cada linea del ticket tendrá un id propio. de esta forma si queremos devolver un producto anularemos en nuestra base de datos el ticket emitido, y se creara un nuevo ticket sin dicha linea. Al estar cada linea del ticket asociada a un único id, solo se cancelará el producto de dicha linea.
 
 ###Creación de tablas 
+
 [create.sql](https://github.com/sn1k/PROYECTO-TPV/blob/master/BBDD/base.sql)
 #Codigo implementado de problemas solucionados
 
 ###Modelos
+
 [Articulo](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/models/Articulo_model.php)
 [Precio](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/models/Precio_model.php)
 [Carrito](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/models/Carrito_model.php)
