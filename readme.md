@@ -27,7 +27,9 @@ Cada linea del ticket tendrá un id propio. de esta forma si queremos devolver u
 ###Modelos
 
 [Articulo](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/models/Articulo_model.php)
+
 [Precio](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/models/Precio_model.php)
+
 [Carrito](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/models/Carrito_model.php)
 
 ###Controladores
