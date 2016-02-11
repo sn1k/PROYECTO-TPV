@@ -1,4 +1,4 @@
-#Proyecto TPV v0.001 ~ IN PRODUCTION
+#Proyecto TPV v0.001 ~ PHP & MYSQL 5.5 
 ###En este proyecto vamos a tratar de solucionar los problemas que se presentar al modelar e implementar un TPV de una tienda de ropa.
 
 
