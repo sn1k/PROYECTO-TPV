@@ -57,3 +57,6 @@ Cada linea del ticket tendrá un id propio. de esta forma si queremos devolver u
 
 - [x] [Success added](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/precios/success.php)
 
+
+##Otros
+- [ ] css by bootstrap.
