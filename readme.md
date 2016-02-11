@@ -2,7 +2,7 @@
 ###En este proyecto vamos a tratar de solucionar los problemas que se presentar al modelar e implementar un TPV de una tienda de ropa.
 
 
-###Diagrama UML
+#Diagrama UML
 ![UML](https://i.gyazo.com/a6f053a49d54ba2e5d61f62dc5ce31a0.png)
 
 **Descripción**
@@ -25,6 +25,7 @@ Cada linea del ticket tendrá un id propio. de esta forma si queremos devolver u
 ###Creación de tablas 
 
 [create.sql](https://github.com/sn1k/PROYECTO-TPV/blob/master/BBDD/base.sql)
+
 #Codigo implementado de problemas solucionados
 
 ###Modelos
