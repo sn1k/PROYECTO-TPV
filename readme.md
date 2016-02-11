@@ -26,7 +26,7 @@ Cada linea del ticket tendrá un id propio. de esta forma si queremos devolver u
 
 [create.sql](https://github.com/sn1k/PROYECTO-TPV/blob/master/BBDD/base.sql)
 
-#Codigo implementado de problemas solucionados
+#Codigo implementado / problemas solucionados
 
 ###Modelos
 
