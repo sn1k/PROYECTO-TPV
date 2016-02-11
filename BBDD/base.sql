@@ -1,8 +1,8 @@
 DROP TABLE IF EXISTS Articulo;
 CREATE TABLE Articulo (
  id INT AUTO_INCREMENT,
- nombre CHAR(30) NOT NULL,
- descripcion char(100),
+ nombre VARCHAR(30) NOT NULL,
+ descripcion VARCHAR(100),
  PRIMARY KEY (id)
 );
 
