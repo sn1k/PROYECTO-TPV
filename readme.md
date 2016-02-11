@@ -20,7 +20,7 @@ Se han añadido dos atributos extra:
  - fechaInit: Desde que fecha empieza ese precio.
  - fechaFin : Hasta cuando esta disponible ese precio.
 
-Esto se ha realizado así para poder configurar precios según temporadas y además poder obtener un histórico de precios de cada articulo.
+Un artículo puede estar enlazado a varios precios.Esto se ha realizado así para poder configurar precios según temporadas y además poder obtener un histórico de precios de cada articulo.
 
 Linea carrito se compondrá de un Articulo y de su posible descuento, esta linea se enviara al carrito que a su vez se enviará a la factura final.
 
