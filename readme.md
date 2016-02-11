@@ -23,10 +23,14 @@
 
 ###Vistas
 **Articulos**
+
 [Crear articulo](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/articulos/create.php)
+
 [index Articulos](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/articulos/index.php)
+
 [Success added](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/articulos/success.php)
 
 **Precio**
 [Add precio](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/precios/index.php)
+
 [Success added](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/precios/success.php)
