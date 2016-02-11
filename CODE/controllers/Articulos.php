@@ -25,10 +25,10 @@ class Articulos extends CI_Controller {
 	public function create()
 	{
 		$this->load->helper('form');
-    $this->load->library('form_validation');
+		$this->load->library('form_validation');
 
 		$this->form_validation->set_rules('nombre', 'Nombre', 'required');
-    $this->form_validation->set_rules('descripcion', 'Descripción', 'required');
+		$this->form_validation->set_rules('descripcion', 'Descripción', 'required');
 		$this->form_validation->set_rules('precio', 'Precio', 'required');
 
 		if ($this->form_validation->run() === FALSE){
