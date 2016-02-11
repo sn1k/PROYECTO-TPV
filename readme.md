@@ -7,11 +7,16 @@
 
 **Descripción**
 
-Los articulos se añadiran uno a uno a la base de datos. Al introducirlos se le indiracara un precio aunque luego se podrá modificar dicho precio.
+Los articulos se añadiran uno a uno a la base de datos. Al introducirlos se le indiracara un precio aunque luego se podrá modificar dicho precio. Estos articulos pasaron por un carrito y al comprarlos se expenderá una factura.
+
+**Artículos**
+
+Dichos productos puede formar packs, esta asociado a un stock, a un precio y a un posible descuento.
 
 **Precio**
 
-En el apartado de precios se han añadido dos atributos extra:
+Cada precio ira enlazado a un artículo.
+Se han añadido dos atributos extra:
  - fechaInit: Desde que fecha empieza ese precio.
  - fechaFin : Hasta cuando esta disponible ese precio.
 
