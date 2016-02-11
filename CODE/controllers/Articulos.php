@@ -31,8 +31,7 @@ class Articulos extends CI_Controller {
     $this->form_validation->set_rules('descripcion', 'Descripción', 'required');
 		$this->form_validation->set_rules('precio', 'Precio', 'required');
 
-		if ($this->form_validation->run() === FALSE)
-    {
+		if ($this->form_validation->run() === FALSE){
 			$this->load->view('articulos/create');
 		}
 		else
