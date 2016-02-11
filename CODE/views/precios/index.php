@@ -80,7 +80,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<?php
 			$hidden = array('idArticulo' => $idArticulo);
-
 			echo form_open('precios/index/'.$idArticulo.'/', '', $hidden);
 		?>
 
