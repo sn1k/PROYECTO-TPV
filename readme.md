@@ -9,7 +9,7 @@
 
 
 #Diagrama UML
-![UML](https://i.gyazo.com/a6f053a49d54ba2e5d61f62dc5ce31a0.png)
+![UML](https://i.gyazo.com/d8a2df8e0edaaef9a31b71d9e5c44faf.png)
 
 **Descripción**
 
