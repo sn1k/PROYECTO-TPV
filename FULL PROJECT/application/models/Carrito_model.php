@@ -11,20 +11,33 @@ class Carrito_model extends CI_Model {
 
         public function get_carrito()
         {
-                $query = $this->db->get(self::TABLA);
-                return $query->result();
+          $this->db->select('*');
+          $this->db->from(self::TABLA);
+          $this->db->join('Articulo', self::TABLA.'.idArticulo = Articulo.idArticulo');
+          $this->db->join('PrecioArticulo', 'Articulo.idArticulo = PrecioArticulo.idArticulo');
+          $this->db->where('PrecioArticulo.FechaFin', NULL);
+          $query = $this->db->get();
+          return $query->result();
         }
 
-        public function set_linea()
+        public function set_linea($idArticulo)
         {
-            $idArticulo = $this->input->post('idArticulo');
             $articulo = $this->articulo_model->get_articulo($idArticulo);
             $data = array(
-                'nombre' => $articulo->nombre,
-                'precio' => $this->precio_model->get_precio($idArticulo);,
                 'idArticulo' => $idArticulo,
             );
-
             return $this->db->insert(self::TABLA, $data);
+        }
+
+        public function delete_linea($idCarrito)
+        {
+            $this->db->delete(self::TABLA, array('idCarrito' => $idCarrito));
+        }
+
+        public function vaciar_carrito()
+        {
+            $this->db->empty_table(self::TABLA);
+
+
         }
 }

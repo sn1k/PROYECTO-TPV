@@ -1,4 +1,3 @@
-
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
@@ -66,31 +65,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	}
 	</style>
 </head>
-  <body>
+<body>
 
-        <div id="container">
-        	<h1>PROYECTO TPV</h1>
-        <div>
-					<h2>Listado de artículos</h2>
-<?php foreach ($articulos as $articulos_item): ?>
-        <h3><?php echo $articulos_item->nombre; ?></h3>
-        <div class="main">
-                <?php echo $articulos_item->descripcion; ?>
-        </div>
-        <p>
-					<a href="<?php echo site_url('articulos/view/'.$articulos_item->idArticulo); ?>">Ver artículo</a>
-					<a href="<?php echo site_url('carritos/create/'.$articulos_item->idArticulo); ?>">Añadir carrito</a>
+<div id="container">
+	<h1>Proyecto TPV</h1>
 
-				</p>
+	<div id="body">
+	  <h1></h1>
+    <p>Nombre:</br> <?php echo $articulo->nombre; ?></p>
+    <p>Descripción:</br><?php echo $articulo->descripcion; ?>
+      <?php echo $precio->Precio; ?>
+    </p>
+    <p><a href="<?php echo site_url(''); ?>">Atrás</a></p>
 
-<?php endforeach; ?>
-        </div>
 
-				<p><a href="<?php echo site_url('articulos/create'); ?>">Añadir artículo</a></p>
-				<p><a href="<?php echo site_url('tickets/'); ?>">Tickets</a></p>
 
-        	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
-        </div>
 
-    </body>
+	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+</div>
+
+</body>
 </html>

@@ -29,7 +29,10 @@ class Precios extends CI_Controller {
 		}
 		else
 		{
-			$data['precio'] = $this->precio_model->set_precio($idArticulo);
+			$precio =  $this->input->post('precio');
+			$date =  $this->input->post('fecha');
+
+			$data['precio'] = $this->precio_model->set_precio($idArticulo, $precio, $date);
 			$this->load->view('precios/success', $data);
 		}
 	}

@@ -16,11 +16,15 @@ class Articulos extends CI_Controller {
 		$this->load->view('articulos/index', $data);
 	}
 
+
 	public function view($id)
 	{
-		$data['articulo_item'] = $id;
-		$this->load->view('articulos/view', $data);
+			$data['articulo'] = $this->articulo_model->get_articulo($id);
+      $data['precio'] = $this->articulo_model->get_precio($id);
+			$this->load->view('articulos/view', $data);
+
 	}
+
 
 	public function create()
 	{
