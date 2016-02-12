@@ -69,12 +69,14 @@ CREATE TABLE Stock (
   
  DROP TABLE IF EXISTS Carrito;# MySQL ha devuelto un conjunto de valores vacío (es decir: cero columnas).
 
- CREATE TABLE Carrito (
+CREATE TABLE Carrito (
   idCarrito INT AUTO_INCREMENT,
   FechaCreacion DATE NOT NULL,
   Estado INT,
   FechaFin DATE, 
-  PRIMARY KEY (idCarrito)
+  idArticulo INT,
+  PRIMARY KEY (idCarrito),
+  FOREIGN KEY (idArticulo) REFERENCES Articulo(idArticulo) ON DELETE CASCADE
    );# MySQL ha devuelto un conjunto de valores vacío (es decir: cero columnas).
 
    
