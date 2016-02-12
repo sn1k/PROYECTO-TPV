@@ -1,4 +1,7 @@
 #PRÓXIMA ACTUALIZACIÓN COMPLETA 12/02/2016 18:00H~
+- Diagrama
+- Nuemos modelos, controladores y vistas
+- CSS
 
 
 #Proyecto TPV v0.001 ~ CodeIgniter+PHP & MYSQL
