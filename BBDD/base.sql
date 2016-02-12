@@ -108,3 +108,8 @@ CREATE TABLE LineaTicket (
   FOREIGN KEY (idArticulo) REFERENCES Articulo(idArticulo) ON DELETE CASCADE,
   FOREIGN KEY (idTicket) REFERENCES Ticket(idTicket) ON DELETE CASCADE
    );
+
+//PRUEBAS
+DELETE FROM `LineaTicket` WHERE 1;
+DELETE FROM `Carrito` WHERE 1;
+DELETE FROM `Ticket` WHERE 1;
