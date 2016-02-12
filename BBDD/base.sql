@@ -97,3 +97,11 @@ CREATE TABLE Carrito (
   Fecha DATE,
     PRIMARY KEY (idDevolucion)
    );# MySQL ha devuelto un conjunto de valores vacío (es decir: cero columnas).
+CREATE TABLE LineaTicket (
+  idLinea INT AUTO_INCREMENT,
+  idArticulo INT NOT NULL,
+  descripcion VARCHAR(60) NOT NULL,
+  precio DECIMAL(10,2),
+  PRIMARY KEY (idLinea),
+  FOREIGN KEY (idArticulo) REFERENCES Articulo(idArticulo) ON DELETE CASCADE
+   );
