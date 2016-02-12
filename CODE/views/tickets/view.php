@@ -71,18 +71,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div id="container">
         	<h1>PROYECTO TPV</h1>
         <div>
-					<h2>Ver ticket <?php echo $ticket->precio; ?></h2>
-<?php foreach ($lineasTicket as $linea_ticket): ?>
-        <h3><?php echo $linea_ticket->precio; ?> <?php echo $linea_ticket->descripcion; ?></h3>
-				<?php if(!$ticket->Anulado) { ?> <p><a href="<?php echo site_url('tickets/devolver/'.$linea_ticket->idLinea); ?>">Devolver</a></p> <?php } ?>
-
-
-<?php endforeach; ?>
-	<p><a href="<?php echo site_url(''); ?>">Atrás</a></p>
+		<h2>Ver ticket <?php echo $ticket->precio; ?></h2>
+		<?php foreach ($lineasTicket as $linea_ticket): ?>
+			 <h3><?php echo $linea_ticket->precio; ?> <?php echo $linea_ticket->descripcion; ?></h3>
+			<?php if(!$ticket->Anulado) { ?> <p><a href="<?php echo site_url('tickets/devolver/'.$linea_ticket->idLinea); ?>">Devolver</a></p> <?php } ?>
+		<?php endforeach; ?>
+		<p><a href="<?php echo site_url(''); ?>">Atrás</a></p>
 
         </div>
-
-        	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+		<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
         </div>
 
     </body>
