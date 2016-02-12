@@ -1,6 +1,8 @@
 #Proyecto TPV v0.003 ~ CodeIgniter+PHP & MYSQL
 ###En este proyecto vamos a tratar de solucionar los problemas que se presentar al modelar e implementar un TPV de una tienda de ropa.
 
+#Página principal
+![frontpage](https://i.gyazo.com/79078f25c4af2f8886f5623a0eb5337a.png)
 
 #Diagrama UML
 ![UML](https://i.gyazo.com/d8a2df8e0edaaef9a31b71d9e5c44faf.png)
@@ -87,4 +89,6 @@ Linea carrito se compondrá de un Articulo y de su posible descuento, esta linea
 
 - [ ] Packs
 ##Otros
-- [ ] css by bootstrap.
+- [x] CSS index principal
+
+- [x] CSS resto 
