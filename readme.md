@@ -81,5 +81,9 @@ Cada ticket tendra X lineaTicket, cada una de ellas identificadas por un id prop
 
 - [x] [Vista carrito](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/tickets/view.php)
 
+**Ofertas & descuentos**
+- [ ] Descuentos
+
+- [ ] Packs
 ##Otros
 - [ ] css by bootstrap.
