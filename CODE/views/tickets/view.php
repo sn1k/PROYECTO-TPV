@@ -1,3 +1,4 @@
+
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
@@ -65,36 +66,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	}
 	</style>
 </head>
-<body>
+  <body>
 
-<div id="container">
-	<h1>Proyecto TPV</h1>
+        <div id="container">
+        	<h1>PROYECTO TPV</h1>
+        <div>
+					<h2>Ver ticket <?php echo $ticket->precio; ?></h2>
+<?php foreach ($lineasTicket as $linea_ticket): ?>
+        <h3><?php echo $linea_ticket->precio; ?> <?php echo $linea_ticket->descripcion; ?></h3>
+				<?php if(!$ticket->Anulado) { ?> <p><a href="<?php echo site_url('tickets/devolver/'.$linea_ticket->idLinea); ?>">Devolver</a></p> <?php } ?>
 
-	<div id="body">
-	  <h1>Añadir precio a <?php echo $nombreArticulo ?></h1>
-		<?php foreach ($precios as $precio): ?>
-		        <p><?php echo $precio->Precio ?> - <?php echo $precio->FechaInit ?></p>
 
-		<?php endforeach; ?>
-		<?php echo validation_errors(); ?>
+<?php endforeach; ?>
+	<p><a href="<?php echo site_url(''); ?>">Atrás</a></p>
 
-		<?php
-			$hidden = array('idArticulo' => $idArticulo);
+        </div>
 
-			echo form_open('precios/index/'.$idArticulo.'/', '', $hidden);
-		?>
+        	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+        </div>
 
-		    <label for="precio">Precio</label>
-		    <input type="input" name="precio" /><br />
-
-		    <label for="fecha">Fecha</label>
-		    <input type="input" name="fecha" /><br />
-
-		    <input type="submit" name="submit" value="Añadir precio" />
-
-		</form>
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
-</div>
-
-</body>
+    </body>
 </html>

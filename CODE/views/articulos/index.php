@@ -77,12 +77,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="main">
                 <?php echo $articulos_item->descripcion; ?>
         </div>
-        <p><a href="<?php echo site_url('articulos/view/'.$articulos_item->id); ?>">Ver artículo</a></p>
+        <p>
+					<a href="<?php echo site_url('articulos/view/'.$articulos_item->idArticulo); ?>">Ver artículo</a>
+					<a href="<?php echo site_url('carritos/create/'.$articulos_item->idArticulo); ?>">Añadir carrito</a>
+
+				</p>
 
 <?php endforeach; ?>
         </div>
 
 				<p><a href="<?php echo site_url('articulos/create'); ?>">Añadir artículo</a></p>
+				<p><a href="<?php echo site_url('tickets/'); ?>">Tickets</a></p>
 
         	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
         </div>

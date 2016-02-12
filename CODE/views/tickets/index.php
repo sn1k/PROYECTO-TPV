@@ -1,3 +1,4 @@
+
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
@@ -65,36 +66,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	}
 	</style>
 </head>
-<body>
+  <body>
 
-<div id="container">
-	<h1>Proyecto TPV</h1>
+        <div id="container">
+        	<h1>PROYECTO TPV</h1>
+        <div>
+					<h2>Tickets</h2>
+<?php foreach ($tickets as $ticket_item): ?>
+        <h3><?php echo $ticket_item->precio; ?> <?php echo $ticket_item->FechaCreacion; ?> (<?php echo $ticket_item->Anulado	; ?>)</h3>
+        <p><a href="<?php echo site_url('tickets/view/'.$ticket_item->idTicket); ?>">Ver ticket</a></p>
 
-	<div id="body">
-	  <h1>Añadir precio a <?php echo $nombreArticulo ?></h1>
-		<?php foreach ($precios as $precio): ?>
-		        <p><?php echo $precio->Precio ?> - <?php echo $precio->FechaInit ?></p>
+<?php endforeach; ?>
+				<p><a href="<?php echo site_url(''); ?>">Atrás</a></p>
+        </div>
 
-		<?php endforeach; ?>
-		<?php echo validation_errors(); ?>
+        	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+        </div>
 
-		<?php
-			$hidden = array('idArticulo' => $idArticulo);
-
-			echo form_open('precios/index/'.$idArticulo.'/', '', $hidden);
-		?>
-
-		    <label for="precio">Precio</label>
-		    <input type="input" name="precio" /><br />
-
-		    <label for="fecha">Fecha</label>
-		    <input type="input" name="fecha" /><br />
-
-		    <input type="submit" name="submit" value="Añadir precio" />
-
-		</form>
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
-</div>
-
-</body>
+    </body>
 </html>

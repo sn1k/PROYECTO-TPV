@@ -71,28 +71,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<h1>Proyecto TPV</h1>
 
 	<div id="body">
-	  <h1>Añadir precio a <?php echo $nombreArticulo ?></h1>
-		<?php foreach ($precios as $precio): ?>
-		        <p><?php echo $precio->Precio ?> - <?php echo $precio->FechaInit ?></p>
+	  <h1></h1>
+    <p>Nombre:</br> <?php echo $articulo->nombre; ?></p>
+    <p>Descripción:</br><?php echo $articulo->descripcion; ?>
+      <?php echo $precio->Precio; ?>
+    </p>
+    <p><a href="<?php echo site_url(''); ?>">Atrás</a></p>
 
-		<?php endforeach; ?>
-		<?php echo validation_errors(); ?>
 
-		<?php
-			$hidden = array('idArticulo' => $idArticulo);
 
-			echo form_open('precios/index/'.$idArticulo.'/', '', $hidden);
-		?>
 
-		    <label for="precio">Precio</label>
-		    <input type="input" name="precio" /><br />
-
-		    <label for="fecha">Fecha</label>
-		    <input type="input" name="fecha" /><br />
-
-		    <input type="submit" name="submit" value="Añadir precio" />
-
-		</form>
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>
 

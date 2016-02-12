@@ -6,18 +6,18 @@ class Precios extends CI_Controller {
 	public function __construct()
   {
     parent::__construct();
-	$this->load->model('precio_model');
-	$this->load->model('articulo_model');
-	$this->load->helper('url_helper');
+    $this->load->model('precio_model');
+		$this->load->model('articulo_model');
+    $this->load->helper('url_helper');
   }
 
 	public function index($idArticulo)
 	{
 		$this->load->helper('form');
-    		$this->load->library('form_validation');
+    $this->load->library('form_validation');
 
 		$this->form_validation->set_rules('precio', 'Precio', 'required');
-    		$this->form_validation->set_rules('fecha', 'Fecha', 'required');
+    $this->form_validation->set_rules('fecha', 'Fecha', 'required');
 
 		$data['precios'] = $this->precio_model->get_precios($idArticulo);
 
@@ -29,7 +29,10 @@ class Precios extends CI_Controller {
 		}
 		else
 		{
-			$data['precio'] = $this->precio_model->set_precio($idArticulo);
+			$precio =  $this->input->post('precio');
+			$date =  $this->input->post('fecha');
+
+			$data['precio'] = $this->precio_model->set_precio($idArticulo, $precio, $date);
 			$this->load->view('precios/success', $data);
 		}
 	}

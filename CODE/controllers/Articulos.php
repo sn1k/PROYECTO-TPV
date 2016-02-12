@@ -16,22 +16,27 @@ class Articulos extends CI_Controller {
 		$this->load->view('articulos/index', $data);
 	}
 
+
 	public function view($id)
 	{
-		$data['articulo_item'] = $id;
-		$this->load->view('articulos/view', $data);
+			$data['articulo'] = $this->articulo_model->get_articulo($id);
+      $data['precio'] = $this->articulo_model->get_precio($id);
+			$this->load->view('articulos/view', $data);
+
 	}
+
 
 	public function create()
 	{
 		$this->load->helper('form');
-		$this->load->library('form_validation');
+    $this->load->library('form_validation');
 
 		$this->form_validation->set_rules('nombre', 'Nombre', 'required');
-		$this->form_validation->set_rules('descripcion', 'Descripción', 'required');
+    $this->form_validation->set_rules('descripcion', 'Descripción', 'required');
 		$this->form_validation->set_rules('precio', 'Precio', 'required');
 
-		if ($this->form_validation->run() === FALSE){
+		if ($this->form_validation->run() === FALSE)
+    {
 			$this->load->view('articulos/create');
 		}
 		else

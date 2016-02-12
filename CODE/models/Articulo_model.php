@@ -1,6 +1,7 @@
 <?php
 class Articulo_model extends CI_Model {
         const TABLA = 'Articulo';
+        const PRECIO = 'PrecioArticulo';
 
         public function __construct()
         {
@@ -16,10 +17,14 @@ class Articulo_model extends CI_Model {
 
         public function get_articulo($idArticulo)
         {
-                $query = $this->db->get_where(self::TABLA, array('id' => $idArticulo));
+                $query = $this->db->get_where(self::TABLA, array('idArticulo' => $idArticulo));
                 return $query->row();
         }
-
+        public function get_precio($idArticulo)
+        {
+                $query = $this->db->get_where(self::PRECIO, array('idArticulo' => $idArticulo));
+                return $query->row();
+        }
         public function set_articulos()
         {
             $precio = $this->input->post('precio');
