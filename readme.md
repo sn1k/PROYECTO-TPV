@@ -75,9 +75,11 @@ Cada ticket tendra X lineaTicket, cada una de ellas identificadas por un id prop
 
 - [x] [Index](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/carritos/index.php)
 
+**Ticket**
+
 - [x] [Index](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/tickets/index.php)
 
-- [x] [Vista carrita](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/tickets/view.php)
+- [x] [Vista carrito](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/tickets/view.php)
 
 ##Otros
 - [ ] css by bootstrap.
