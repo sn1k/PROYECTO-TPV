@@ -71,15 +71,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div id="container">
         	<h1>PROYECTO TPV</h1>
         <div>
-					<h2>Tickets</h2>
-<?php foreach ($tickets as $ticket_item): ?>
-        <h3><?php echo $ticket_item->precio; ?> <?php echo $ticket_item->FechaCreacion; ?> (<?php echo $ticket_item->Anulado	; ?>)</h3>
-        <p><a href="<?php echo site_url('tickets/view/'.$ticket_item->idTicket); ?>">Ver ticket</a></p>
-
-<?php endforeach; ?>
-				<p><a href="<?php echo site_url(''); ?>">Atrás</a></p>
+		<h2>Tickets</h2>
+		<?php foreach ($tickets as $ticket_item): ?>
+		        <h3><?php echo $ticket_item->precio; ?> <?php echo $ticket_item->FechaCreacion; ?> (<?php echo $ticket_item->Anulado	; ?>)</h3>
+		        <p><a href="<?php echo site_url('tickets/view/'.$ticket_item->idTicket); ?>">Ver ticket</a></p>
+		<?php endforeach; ?>
+		<p><a href="<?php echo site_url(''); ?>">Atrás</a></p>
         </div>
-
         	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
         </div>
 
