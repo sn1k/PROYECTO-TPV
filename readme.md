@@ -1,8 +1,8 @@
 #PRÓXIMA ACTUALIZACIÓN COMPLETA 12/02/2016 18:00H~
 - Diagrama
-- Nuemos modelos, controladores y vistas
+- Nuevos modelos, controladores y vistas
 - CSS
-
+- Merendar
 
 #Proyecto TPV v0.001 ~ CodeIgniter+PHP & MYSQL
 ###En este proyecto vamos a tratar de solucionar los problemas que se presentar al modelar e implementar un TPV de una tienda de ropa.
