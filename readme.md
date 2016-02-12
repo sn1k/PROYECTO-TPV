@@ -54,18 +54,22 @@ Cada ticket tendra X lineaTicket, cada una de ellas identificadas por un id prop
 
 - [x] [Precios](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/controllers/Precios.php)
 
-- [ ] Devolución
+- [x] [Tickets](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/controllers/Tickets.php)
+ 
+- [x] [Carritos](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/controllers/Carritos.php)
 
-- [ ] Descuentos
+
 
 ###Vistas
 **Articulos**
 
-- [x] [Crear articulo](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/articulos/create.php)
+- [x] [Crear artículo](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/articulos/create.php)
 
-- [x] [index Articulos](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/articulos/index.php)
+- [x] [index Artículos](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/articulos/index.php)
 
 - [x] [Success added](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/articulos/success.php)
+
+- [x] [Ver artículo](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/articulos/view.php)
 
 **Precio**
 
@@ -73,6 +77,13 @@ Cada ticket tendra X lineaTicket, cada una de ellas identificadas por un id prop
 
 - [x] [Success added](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/precios/success.php)
 
+**Carrito**
+
+- [x] [Index](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/carritos/index.php)
+
+- [x] [Index](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/tickets/index.php)
+
+- [x] [Vista carrita](https://github.com/sn1k/PROYECTO-TPV/blob/master/CODE/views/tickets/view.php)
 
 ##Otros
 - [ ] css by bootstrap.
