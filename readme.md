@@ -1,4 +1,4 @@
-#Proyecto TPV v0.003 ~ CodeIgniter+PHP & MYSQL
+#Proyecto TPV v0.5 ~ CodeIgniter+PHP & MYSQL
 ###En este proyecto vamos a tratar de solucionar los problemas que se presentar al modelar e implementar un TPV de una tienda de ropa.
 
 #Página principal
