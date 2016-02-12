@@ -26,7 +26,8 @@ Linea carrito se compondrá de un Articulo y de su posible descuento, esta linea
 
 **Proceso de devolución.**
 
-Cada ticket tendra X lineaTicket, cada una de ellas identificadas por un id propio. De esta forma, si queremos devolver un producto anularemos en nuestra base de datos el ticket emitido, y se creara un nuevo ticket sin dicha linea. Al estar cada linea del ticket asociada a un único id, solo se cancelará el producto de dicha linea.
+- Solo se podrán devolver los productos de uno en uno. 
+- Cada vez que se devuelva, el campo interno "Anulado" se pondrá verdadero y se generará un nuevo ticket sin ese producto y con el precio actualizado.
 
 ###Creación de tablas 
 
