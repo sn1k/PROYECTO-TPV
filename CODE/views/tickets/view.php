@@ -74,7 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<h2>Ver ticket <?php echo $ticket->precio; ?></h2>
 		<?php foreach ($lineasTicket as $linea_ticket): ?>
 			 <h3><?php echo $linea_ticket->precio; ?> <?php echo $linea_ticket->descripcion; ?></h3>
-			<?php if(!$ticket->Anulado) { ?> <p><a href="<?php echo site_url('tickets/devolver/'.$linea_ticket->idLinea); ?>">Devolver</a></p> <?php } ?>
+			 <?php if(!$ticket->Anulado) { ?> <p><a href="<?php echo site_url('tickets/devolver/'.$linea_ticket->idLinea); ?>">Devolver</a></p> <?php } ?>
 		<?php endforeach; ?>
 		<p><a href="<?php echo site_url(''); ?>">Atrás</a></p>
 
