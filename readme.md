@@ -2,7 +2,7 @@
 ###En este proyecto vamos a tratar de solucionar los problemas que se presentar al modelar e implementar un TPV de una tienda de ropa.
 
 #Página principal
-![frontpage](https://i.gyazo.com/79078f25c4af2f8886f5623a0eb5337a.png)
+![frontpage](https://i.gyazo.com/99018a81a60122766f31789c276a5ed2.png)
 
 #Diagrama UML
 ![UML](https://i.gyazo.com/d8a2df8e0edaaef9a31b71d9e5c44faf.png)
