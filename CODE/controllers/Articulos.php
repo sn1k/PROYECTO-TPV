@@ -20,7 +20,7 @@ class Articulos extends CI_Controller {
 	public function view($id)
 	{
 			$data['articulo'] = $this->articulo_model->get_articulo($id);
-      $data['precio'] = $this->articulo_model->get_precio($id);
+			 $data['precio'] = $this->articulo_model->get_precio($id);
 			$this->load->view('articulos/view', $data);
 
 	}
